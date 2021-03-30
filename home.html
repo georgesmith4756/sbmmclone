@@ -2,8 +2,25 @@
 <html>
 <body>
 
-<h1>SBMM - Clone</h1>
+<h1>SBMM</h1>
 <p></p>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<!-- The form -->
+
+<p>Please select your platform:</p>
+
+<input type="radio" id="pc" name="platform" value="pc">
+<label for="male">PC</label><br>
+<input type="radio" id="female" name="gender" value="xbox">
+<label for="female">Xbox</label><br>
+<input type="radio" id="other" name="gender" value="playstation">
+<label for="other">Playstation</label>
+
+<p>Please enter your gamertag:</p>
+<form class="example" action="results.html">
+  <input type="text" placeholder="Search.." name="search">
+  <button id = "searchButton" type="submit"><i class="fa fa-search"></i></button>
+</form>
 </body>
 </html>
