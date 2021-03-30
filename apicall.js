@@ -1,11 +1,23 @@
-<script type="text/javascript">
-var http = require('http');
-var dt = require('./myfirstmodule');
+function submitForm(){
 
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/html'});
-  res.write("The date and time are currently: " + dt.myDateTime());
-  res.end();
-}).listen(8080);
+var radios = document.getElementsByName('platform');
 
-</script>
+for (var i = 0, length = radios.length; i < length; i++) {
+  if (radios[i].checked) {
+    var selectedPlaform = radios[i].value
+    alert(radios[i].value);
+
+    // only one radio can be logically checked, don't check the rest
+    break;
+  }
+}
+
+var myWindow = window.open("http://127.0.0.1:5500/results.html");
+
+}
+
+
+
+
+
+

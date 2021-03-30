@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+<script src="apicall.js"></script>
+<script src="bundle.js"></script>
 <body>
 
-<h1>SBMM</h1>
+<h1>MFJ - My Friend Justin</h1>
 <p></p>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -10,15 +12,15 @@
 
 <p>Please select your platform:</p>
 
-<input type="radio" id="pc" name="platform" value="pc">
+<input type="radio" id="pc" name="platform" value="battle">
 <label for="male">PC</label><br>
-<input type="radio" id="female" name="gender" value="xbox">
+<input type="radio" id="female" name="platform" value="xbl">
 <label for="female">Xbox</label><br>
-<input type="radio" id="other" name="gender" value="playstation">
+<input type="radio" id="other" name="platform" value="psn">
 <label for="other">Playstation</label>
 
 <p>Please enter your gamertag:</p>
-<form class="example" action="results.html">
+<form class="example" onsubmit="submitForm()">
   <input type="text" placeholder="Search.." name="search">
   <button id = "searchButton" type="submit"><i class="fa fa-search"></i></button>
 </form>
